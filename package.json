@@ -1,0 +1,20 @@
+{
+  "name": "complex-animation-with",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^16.0.4",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "scripts": {
+    "lint:js": "standard --fix",
+    "lint:style": "stylelint \"./src/**/*.css\" --fix",
+    "lint": "npm run lint:style && npm run lint:js"
+  },
+  "author": "",
+  "license": "ISC"
+}

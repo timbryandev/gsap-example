@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>JS Animate based on scrolling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="scroller" class="scroller">
+      <div class="container">
+        <div class="cube">
+          <div class="face top">Top</div>
+          <div class="face bottom">Bottom</div>
+          <div class="face left">Left</div>
+          <div class="face right">Right</div>
+          <div class="face front">Front</div>
+          <div class="face back">Back</div>
+        </div>
+      </div>
+      <article class="level">
+        <div
+          class="level__background"
+          style="background-image: url('images/l1.jpg')"
+        ></div>
+        <div class="level__content">
+          <h2>Level 1</h2>
+        </div>
+      </article>
+      <article class="level">
+        <div
+          class="level__background"
+          style="background-image: url('images/l2.jpg')"
+        ></div>
+        <div class="level__content">
+          <h2>Level 2</h2>
+        </div>
+      </article>
+      <article class="level">
+        <div
+          class="level__background"
+          style="background-image: url('images/l3.jpg')"
+        ></div>
+        <div class="level__content">
+          <h2>Level 3</h2>
+        </div>
+      </article>
+      <article class="level">
+        <div
+          class="level__background"
+          style="background-image: url('images/l4.jpg')"
+        ></div>
+        <div class="level__content">
+          <h2>Level 4</h2>
+        </div>
+      </article>
+      <div class="progress">
+        <div class="progress-bar">
+          <button class="progress__button">-</button>
+          <button class="progress__button">-</button>
+          <button class="progress__button">-</button>
+          <button class="progress__button">-</button>
+          <button class="progress-bar__button">-</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
