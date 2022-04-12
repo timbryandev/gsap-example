@@ -10,11 +10,38 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>JS Animate based on scrolling</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <main id="scroller" class="scroller">
-      <div class="container">
+    <div asscroll-container>
+      <main>
+        <section class="level">
+          <div class="level__background level__background--1"></div>
+          <div class="level__content">
+            <h2>Level 1</h2>
+          </div>
+        </section>
+        <section class="level">
+          <div class="level__background level__background--2"></div>
+          <div class="level__content">
+            <h2>Level 2</h2>
+          </div>
+        </section>
+        <section class="level">
+          <div class="level__background level__background--3"></div>
+          <div class="level__content">
+            <h2>Level 3</h2>
+          </div>
+        </section>
+        <section class="level">
+          <div class="level__background level__background--4"></div>
+          <div class="level__content">
+            <h2>Level 4</h2>
+          </div>
+        </section>
+      </main>
+
+      <div class="cube__container">
         <div class="cube">
           <div class="face top">Top</div>
           <div class="face bottom">Bottom</div>
@@ -24,52 +51,17 @@
           <div class="face back">Back</div>
         </div>
       </div>
-      <article class="level">
-        <div
-          class="level__background"
-          style="background-image: url('images/l1.jpg')"
-        ></div>
-        <div class="level__content">
-          <h2>Level 1</h2>
-        </div>
-      </article>
-      <article class="level">
-        <div
-          class="level__background"
-          style="background-image: url('images/l2.jpg')"
-        ></div>
-        <div class="level__content">
-          <h2>Level 2</h2>
-        </div>
-      </article>
-      <article class="level">
-        <div
-          class="level__background"
-          style="background-image: url('images/l3.jpg')"
-        ></div>
-        <div class="level__content">
-          <h2>Level 3</h2>
-        </div>
-      </article>
-      <article class="level">
-        <div
-          class="level__background"
-          style="background-image: url('images/l4.jpg')"
-        ></div>
-        <div class="level__content">
-          <h2>Level 4</h2>
-        </div>
-      </article>
-      <div class="progress">
-        <div class="progress-bar">
-          <button class="progress__button">-</button>
-          <button class="progress__button">-</button>
-          <button class="progress__button">-</button>
-          <button class="progress__button">-</button>
-          <button class="progress-bar__button">-</button>
-        </div>
+
+      <div class="properties">
+        <pre>targetPos: <span data-targetPos>0</span></pre>
+        <pre>currentPos: <span data-currentPos>0</span></pre>
+        <pre>maxScroll: <span data-maxScroll>0</span></pre>
+        <pre>scrollEnd: <span data-scrollEnd>0</span></pre>
+        <pre>scrollPercent: <span data-scrollPercent>0</span></pre>
       </div>
-    </main>
-    <script src="script.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@ashthornton/asscroll@2.0.6/build/asscroll.min.js"></script>
+      <script src="bundle.js"></script>
+    </div>
   </body>
 </html>
