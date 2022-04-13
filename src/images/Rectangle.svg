@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="768px" viewBox="0 0 1366 768" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="79.8664656%"
+            gradientTransform="translate(0.000000,0.000000),scale(0.560584,1.000000),rotate(89.128819),translate(-0.000000,-0.000000)"
+            id="radialGradient-1">
+            <stop stop-color="#484948" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Design---1366" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.701785065">
+        <g id="1366---Home" fill="url(#radialGradient-1)">
+            <rect id="Rectangle" x="-2" y="0" width="1370" height="768"></rect>
+        </g>
+    </g>
+</svg>
