@@ -1,5 +1,5 @@
 import React from 'react'
-import Tim from './tim.jsx'
+import Tim from './js/tim.jsx'
 
 const App = () => {
   return (
