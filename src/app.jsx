@@ -1,12 +1,11 @@
 import React from 'react'
-import Tim from './js/tim.jsx'
+import GSAP3 from './js/gsap3.jsx'
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <Tim />
-    </div>
+    <>
+      <GSAP3 />
+    </>
   )
 }
 
