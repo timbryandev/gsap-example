@@ -1,4 +1,5 @@
 import React from 'react'
+import './cube.scss'
 
 const Cube = () => (
   <div className='cube'>

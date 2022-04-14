@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 
-const DURATION = 0.3
 const X_START = 0
 const X_LENGTH = 50
 const Y_START = 25
@@ -28,22 +27,25 @@ const HamburgerButton = ({
   }
 
   useEffect(() => {
+    const crossDuration = 0.75
     gsapTimelineRef.current = gsap.timeline({
-      defaults: { duration: DURATION, ease: 'power2.out' },
+      defaults: { ease: 'power2.out' },
       paused: true
     })
 
     gsapTimelineRef.current
       //  slide middle line to the left
       .to(lineTwoRef.current, {
-        scale: 0
+        scale: 0,
+        duration: 0.2
       })
       // rotate the top and bottom bars to form a cross
       .to(lineOneRef.current, {
         rotate: 45,
         transformOrigin: '50% 50%',
         y: Y_GAP,
-        ease: 'elastic'
+        ease: 'elastic',
+        duration: crossDuration
       })
       .to(
         lineThreeRef.current,
@@ -51,9 +53,10 @@ const HamburgerButton = ({
           rotate: -45,
           transformOrigin: '50% 50%',
           y: -Y_GAP,
-          ease: 'elastic'
+          ease: 'elastic',
+          duration: crossDuration
         },
-        `-=${DURATION}` // keep this animation in sync with the one before it via negative delay
+        '<' // keep this animation in sync with the one before it via negative delay
       )
   }, [])
 

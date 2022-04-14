@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ASScroll from '@ashthornton/asscroll'
+import './scroller.scss'
 
 const initialState = {
   targetPos: 0,

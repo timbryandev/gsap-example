@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import imgSwirl from '../images/swirl.png'
+import './gsap3.scss'
 
 const ANIMATIONS = {
   floatDown: {
