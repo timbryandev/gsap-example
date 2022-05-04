@@ -11,7 +11,7 @@ module.exports = env => {
       compress: true,
       port: 9000
     },
-    entry: ['./src/index.js', './src/index.scss'],
+    entry: ['./src/index.js'],
     output: {
       filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, 'dist'),

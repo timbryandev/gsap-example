@@ -1,0 +1,28 @@
+.navbar {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1;
+  background: white;
+  color:black;
+
+  &__brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
+
+  &__item {
+    padding: 1em;
+  }
+}

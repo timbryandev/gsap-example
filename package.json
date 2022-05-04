@@ -5,6 +5,7 @@
   "private": "true",
   "dependencies": {
     "@ashthornton/asscroll": "^2.0.6",
+    "gsap": "^3.10.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
@@ -37,6 +38,6 @@
     "lint": "npm run lint:style && npm run lint:js",
     "start": "webpack serve --mode=development"
   },
-  "author": "",
+  "author": "TimBryanDev",
   "license": "ISC"
 }
